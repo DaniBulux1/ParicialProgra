@@ -1,4 +1,4 @@
-# Dependencias
+# Son las dependencias instaladas
 node_modules/
 
 # Logs
@@ -7,11 +7,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Sistema
+# el sistema
 .DS_Store
 Thumbs.db
 
-# Variables de entorno
+# las variables de entorno
 .env
 .env.local
 .env.*.local
