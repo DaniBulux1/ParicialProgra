@@ -10,7 +10,7 @@ import {
 
 const router = express.Router();
 
-//definicion de rutas 
+//acá se definen las rutas 
 
 router.get("/", getAllTasks);
 router.get("/completed", getCompletedTasks);
