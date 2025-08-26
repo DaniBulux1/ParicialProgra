@@ -5,13 +5,13 @@ Está desarrollada en **Node.js** usando **Express** y almacena los datos en un 
 
 ---
 
-## 🛠️ Instalación
+## Instalación
 
-1. Clona el repositorio:
+1. Debes de clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/tareas-api.git
-cd tareas-api
+git clone https://github.com/usuario/parcial.git
+cd parcial
 ```
 
 2. Instala las dependencias:
@@ -34,7 +34,7 @@ http://localhost:3000
 
 ---
 
-## ⚡ Endpoints
+## Endpoints
 
 Todos los endpoints usan la ruta base:
 
@@ -44,7 +44,7 @@ http://localhost:3000
 
 ---
 
-### 1️⃣ Listar todas las tareas
+### 1️Listar todas las tareas
 
 * **Método:** GET
 * **URL:** `/tasks`
@@ -68,7 +68,7 @@ curl -X GET http://localhost:3000/tasks
 
 ---
 
-### 2️⃣ Listar solo tareas completadas
+### Listar solo tareas completadas
 
 * **Método:** GET
 * **URL:** `/tasks/completed`
@@ -82,7 +82,7 @@ curl -X GET http://localhost:3000/tasks/completed
 
 ---
 
-### 3️⃣ Ver detalles de una tarea por ID
+### Ver detalles de una tarea por ID
 
 * **Método:** GET
 * **URL:** `/tasks/:id`
@@ -110,7 +110,7 @@ curl -X GET http://localhost:3000/tasks/1
 
 ---
 
-### 4️⃣ Crear una nueva tarea
+### Crear una nueva tarea
 
 * **Método:** POST
 * **URL:** `/tasks/tasks`
@@ -149,7 +149,7 @@ curl -X POST http://localhost:3000/tasks/tasks \
 
 ---
 
-### 5️⃣ Actualizar tarea (cambiar título o completar)
+### Actualizar tarea (cambiar título o completar)
 
 * **Método:** PUT
 * **URL:** `/tasks/:id`
@@ -174,7 +174,7 @@ curl -X PUT http://localhost:3000/tasks/2 \
 
 ---
 
-### 6️⃣ Eliminar tarea
+### Eliminar tarea
 
 * **Método:** DELETE
 * **URL:** `/tasks/:id`
