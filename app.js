@@ -7,6 +7,6 @@ app.use(express.json());
 //configuracion del servidor
 app.use(router);
 app.listen(3000, () => {
-    console.log('Servidor socando en el puerto 3000');
+    console.log('Ahora el servidor esta localizado en el puerto 3000');
 }
 );

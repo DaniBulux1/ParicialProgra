@@ -1,15 +1,17 @@
 {
-  "name": "parcial1",
+  "name": "parcialprogramacion",
   "version": "1.0.0",
-  "description": "primer parcial ",
+  "description": "API rest para gestión de tareas evaluacion",
   "license": "ISC",
-  "author": "Jhony",
+  "author": "Danilo Bulux",
   "type": "module",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   }
 }

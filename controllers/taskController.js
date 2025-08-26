@@ -19,7 +19,7 @@ export const getTaskById = (req, res) => {
     const task = tasks.find(t => t.id === id);
 
     if (!task) {
-        return res.status(404).json({ error: "Tarea no encontrada Primo." });
+        return res.status(404).json({ error: "La tarea no fue encontrada, vuelve a intentarlo." });
     }
 
     res.json(task);
@@ -30,7 +30,7 @@ export const createTask = (req, res) => {
     const { title } = req.body;
 
     if (!title || title.trim() === "") {
-        return res.status(400).json({ error: "El título de la tarea es obligatorio Primo." });
+        return res.status(400).json({ error: "El campo de titulo es obligatorio." });
     }
 
     const newTask = {
@@ -51,7 +51,7 @@ export const updateTask = (req, res) => {
     const task = tasks.find(t => t.id === id);
 
     if (!task) {
-        return res.status(404).json({ error: "Tarea no encontrada Primo." });
+        return res.status(404).json({ error: "La tarea no fue encontrada" });
     }
 
     if (title !== undefined) task.title = title;
@@ -66,7 +66,7 @@ export const deleteTask = (req, res) => {
     const index = tasks.findIndex(t => t.id === id);
 
     if (index === -1) {
-        return res.status(404).json({ error: "Tarea no encontrada Primo." });
+        return res.status(404).json({ error: "Tarea no encontrada" });
     }
 
     const deleted = tasks.splice(index, 1);
